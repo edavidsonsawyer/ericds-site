@@ -1,0 +1,31 @@
+# Security Headers for ericds.dev
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+
+/*
+  # Prevent clickjacking - site cannot be embedded in iframes
+  X-Frame-Options: DENY
+
+  # Prevent MIME type sniffing
+  X-Content-Type-Options: nosniff
+
+  # Control referrer information
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Legacy XSS protection (for older browsers)
+  X-XSS-Protection: 1; mode=block
+
+  # Content Security Policy
+  # - default-src 'self': only load resources from same origin by default
+  # - script-src 'self' 'unsafe-inline': allow our inline scripts (Astro components)
+  # - style-src 'self' 'unsafe-inline': allow our inline styles (Astro scoped styles)
+  # - img-src 'self' data: https:: allow images from self, data URIs, and any HTTPS
+  # - font-src 'self': only load fonts from same origin
+  # - connect-src 'self' https://formspree.io: allow form submissions to Formspree
+  # - frame-ancestors 'none': prevent embedding (belt + suspenders with X-Frame-Options)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formspree.io
+
+  # Permissions Policy - disable unnecessary browser features
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+
+  # Strict Transport Security - force HTTPS (Cloudflare handles this but belt + suspenders)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
