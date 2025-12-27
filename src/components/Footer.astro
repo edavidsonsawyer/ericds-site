@@ -1,0 +1,115 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="footer-name">Eric Davidson-Sawyer</p>
+        <p class="footer-location">South Berwick, ME</p>
+        <p class="footer-tagline">Web Development</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/services">Services</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {currentYear} Eric Davidson-Sawyer. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-text);
+    color: white;
+    padding: 3rem 0 1.5rem;
+    margin-top: auto;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-info p {
+    margin: 0.25rem 0;
+  }
+
+  .footer-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .footer-location {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .footer-contact a {
+    color: white;
+  }
+
+  .footer-contact a:hover {
+    color: var(--color-primary);
+  }
+
+  .separator {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .footer-links a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-links {
+      justify-content: center;
+    }
+
+    .separator {
+      display: none;
+    }
+
+    .footer-contact a {
+      display: block;
+      margin: 0.25rem 0;
+    }
+  }
+</style>

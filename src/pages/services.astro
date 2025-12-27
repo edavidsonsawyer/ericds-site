@@ -1,0 +1,167 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Services"
+  description="Web development services including website design, hosting, maintenance, and local SEO for businesses in South Berwick, ME and surrounding areas."
+>
+  <section class="page-header">
+    <div class="container">
+      <h1>Services</h1>
+      <p>Everything you need to build and maintain your online presence.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="service-detail">
+        <h2>Website Design & Development</h2>
+        <p>
+          Your website is often the first impression potential customers have of your
+          business. I build modern, professional websites that look great and perform
+          even better.
+        </p>
+        <h3>What's Included:</h3>
+        <ul>
+          <li>Custom design tailored to your brand</li>
+          <li>Mobile-responsive layout (looks great on phones and tablets)</li>
+          <li>Fast loading speeds (critical for SEO and user experience)</li>
+          <li>SSL certificate for security (the padlock in the browser)</li>
+          <li>Basic SEO setup (meta tags, sitemap, schema markup)</li>
+          <li>Contact form integration</li>
+          <li>Google Analytics setup</li>
+        </ul>
+        <p class="service-note">
+          <strong>Timeline:</strong> Most websites are completed within 2-4 weeks,
+          depending on complexity and content readiness.
+        </p>
+      </div>
+
+      <div class="service-detail">
+        <h2>Web Hosting</h2>
+        <p>
+          Reliable hosting is the foundation of your online presence. I offer managed
+          hosting so you never have to worry about technical details.
+        </p>
+        <h3>What's Included:</h3>
+        <ul>
+          <li>Fast, reliable servers with 99.9% uptime</li>
+          <li>SSL certificate (HTTPS) included</li>
+          <li>Daily backups</li>
+          <li>CDN for fast global performance</li>
+          <li>Email support for hosting issues</li>
+        </ul>
+      </div>
+
+      <div class="service-detail">
+        <h2>Website Maintenance</h2>
+        <p>
+          Websites need regular attention to stay secure and perform well. I offer
+          ongoing maintenance plans to keep your site in top shape.
+        </p>
+        <h3>What's Included:</h3>
+        <ul>
+          <li>Regular security updates</li>
+          <li>Performance monitoring</li>
+          <li>Content updates (text, images, new pages)</li>
+          <li>Monthly reports on site health and traffic</li>
+          <li>Priority support for issues</li>
+        </ul>
+      </div>
+
+      <div class="service-detail">
+        <h2>Local SEO</h2>
+        <p>
+          Being found online by local customers is essential. I help you show up in
+          Google searches and maps when people look for businesses like yours.
+        </p>
+        <h3>What's Included:</h3>
+        <ul>
+          <li>Google Business Profile setup and optimization</li>
+          <li>Local directory listings (Yelp, Bing Places, etc.)</li>
+          <li>On-page SEO for local keywords</li>
+          <li>Schema markup for rich search results</li>
+          <li>Review strategy guidance</li>
+        </ul>
+      </div>
+
+      <div class="service-detail">
+        <h2>Additional Services</h2>
+        <p>Need something specific? I also offer:</p>
+        <ul>
+          <li><strong>Booking/Scheduling integration</strong> - Let customers book appointments online</li>
+          <li><strong>E-commerce setup</strong> - Sell products online with Shopify or WooCommerce</li>
+          <li><strong>Email marketing setup</strong> - Newsletter integration with Mailchimp, etc.</li>
+          <li><strong>Website migration</strong> - Move your existing site to better hosting</li>
+          <li><strong>Performance optimization</strong> - Speed up your existing website</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container text-center">
+      <h2>Not Sure What You Need?</h2>
+      <p class="text-light">
+        Let's have a conversation. I'll help you figure out what makes sense for
+        your business and budget.
+      </p>
+      <a href="/contact" class="btn mt-2">Schedule a Free Consultation</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-header {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 4rem 0;
+  }
+
+  .page-header h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .service-detail {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .service-detail:last-of-type {
+    border-bottom: none;
+  }
+
+  .service-detail h2 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .service-detail h3 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-detail ul {
+    padding-left: 1.5rem;
+    color: var(--color-text-light);
+  }
+
+  .service-detail li {
+    margin-bottom: 0.5rem;
+  }
+
+  .service-note {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--color-bg-alt);
+    border-radius: 0.5rem;
+    color: var(--color-text-light);
+  }
+</style>

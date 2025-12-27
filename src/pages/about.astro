@@ -1,0 +1,198 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="About"
+  description="Learn about Eric Davidson-Sawyer, a web developer based in South Berwick, ME, helping local businesses build their online presence."
+>
+  <section class="page-header">
+    <div class="container">
+      <h1>About</h1>
+      <p>A little bit about me and how I work.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Hi, I'm Eric</h2>
+
+          <p>
+            I'm a software engineer based in South Berwick, Maine. After years of
+            building software for companies large and small, I started helping local
+            businesses with their web presence.
+          </p>
+
+          <p>
+            I noticed that many local businesses either have outdated websites, no
+            website at all, or are paying too much for basic services. I wanted to
+            change that by offering straightforward, fairly-priced web development
+            that actually serves the needs of small businesses.
+          </p>
+
+          <h3>My Approach</h3>
+
+          <p>
+            I believe in keeping things simple. You don't need a complicated website
+            with dozens of features. You need a site that:
+          </p>
+
+          <ul>
+            <li>Looks professional and reflects your brand</li>
+            <li>Loads fast (customers won't wait)</li>
+            <li>Works perfectly on phones (that's where most people browse)</li>
+            <li>Helps customers find you on Google</li>
+            <li>Makes it easy to contact you or take the next step</li>
+          </ul>
+
+          <p>
+            That's what I focus on. No unnecessary complexity, no ongoing fees you
+            don't understand, no jargon.
+          </p>
+
+          <h3>Why Local?</h3>
+
+          <p>
+            While I work with clients remotely too, there's something special about
+            helping businesses in my own community. I shop at your stores, eat at
+            your restaurants, and use your services. When you succeed, our whole
+            community benefits.
+          </p>
+
+          <p>
+            Plus, being local means I'm actually available. We can meet for coffee,
+            I can stop by your shop, and I understand the local market you're
+            serving.
+          </p>
+        </div>
+
+        <aside class="about-sidebar">
+          <div class="sidebar-box">
+            <h3>Technical Background</h3>
+            <ul>
+              <li>10+ years software engineering</li>
+              <li>Full-stack development</li>
+              <li>Modern web technologies</li>
+              <li>Performance optimization</li>
+              <li>SEO best practices</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <h3>Based In</h3>
+            <p>South Berwick, ME</p>
+            <p class="text-light">Serving the Seacoast region of Maine and New Hampshire</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container text-center">
+      <h2>Let's Work Together</h2>
+      <p class="text-light">
+        Ready to talk about your project? I'd love to hear what you're working on.
+      </p>
+      <a href="/contact" class="btn mt-2">Get In Touch</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-header {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 4rem 0;
+  }
+
+  .page-header h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .about-text h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-text h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-text p {
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+  }
+
+  .about-text ul {
+    padding-left: 1.5rem;
+    color: var(--color-text-light);
+  }
+
+  .about-text li {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+  }
+
+  .sidebar-box {
+    background: var(--color-bg-alt);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .sidebar-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-box li {
+    padding: 0.25rem 0;
+    color: var(--color-text-light);
+  }
+
+  .sidebar-box p {
+    margin: 0.25rem 0;
+  }
+
+  @media (max-width: 900px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+
+    .about-sidebar {
+      position: static;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .sidebar-box {
+      margin-bottom: 0;
+    }
+  }
+</style>

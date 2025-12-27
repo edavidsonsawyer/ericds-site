@@ -1,0 +1,6 @@
+# robots.txt for ericds.dev
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ericds.dev/sitemap-index.xml

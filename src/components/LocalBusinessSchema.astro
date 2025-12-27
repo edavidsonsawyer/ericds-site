@@ -1,0 +1,67 @@
+---
+// LocalBusiness Schema Markup for SEO
+// Update these values with your actual business information
+
+const businessData = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Eric Davidson-Sawyer Web Development",
+  "description": "Professional web development services for local businesses in South Berwick, ME and the Seacoast region.",
+  "url": "https://ericds.dev",
+  // "telephone": "+1-xxx-xxx-xxxx",  // TODO: Uncomment and add phone when ready
+  // "email": "your@email.com",       // TODO: Uncomment and add email when ready
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "South Berwick",
+    "addressRegion": "ME",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "43.2345",
+    "longitude": "-70.8109"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "South Berwick"
+    },
+    {
+      "@type": "City",
+      "name": "Dover"
+    },
+    {
+      "@type": "City",
+      "name": "Portsmouth"
+    },
+    {
+      "@type": "State",
+      "name": "Maine"
+    },
+    {
+      "@type": "State",
+      "name": "New Hampshire"
+    }
+  ],
+  "priceRange": "$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    // Add your social media URLs here
+    // "https://linkedin.com/in/yourprofile",
+    // "https://github.com/yourusername"
+  ],
+  "serviceType": [
+    "Web Development",
+    "Website Design",
+    "Web Hosting",
+    "Website Maintenance"
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(businessData)} />
