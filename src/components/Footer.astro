@@ -5,16 +5,44 @@ const currentYear = new Date().getFullYear();
 <footer class="footer">
   <div class="container">
     <div class="footer-content">
-      <div class="footer-info">
-        <p class="footer-name">Eric Davidson-Sawyer</p>
-        <p class="footer-location">South Berwick, ME</p>
-        <p class="footer-tagline">Web Development</p>
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <span class="logo-text">Eric</span><span class="logo-accent">DS</span>
+        </a>
+        <p class="footer-tagline">Software & AI Solutions for Business</p>
+        <p class="footer-location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          South Berwick, ME
+        </p>
       </div>
 
-      <div class="footer-links">
-        <a href="/services">Services</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+      <nav class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services">AI Solutions</a></li>
+          <li><a href="/services">Custom Applications</a></li>
+          <li><a href="/services">Web Development</a></li>
+          <li><a href="/services">Local SEO</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-cta">
+        <h4>Ready to start?</h4>
+        <p>Let's build something great together.</p>
+        <a href="/contact" class="btn btn-sm btn-outline-light">Get in Touch</a>
       </div>
     </div>
 
@@ -26,62 +54,125 @@ const currentYear = new Date().getFullYear();
 
 <style>
   .footer {
-    background: var(--color-text);
+    background: linear-gradient(135deg, var(--color-bg-dark) 0%, #1e293b 100%);
     color: white;
-    padding: 3rem 0 1.5rem;
+    padding: 4rem 0 1.5rem;
     margin-top: auto;
   }
 
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.25fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .footer-info p {
-    margin: 0.25rem 0;
+  /* Brand */
+  .footer-brand {
+    padding-right: 2rem;
   }
 
-  .footer-name {
-    font-weight: 600;
-    font-size: 1.1rem;
+  .footer-logo {
+    display: inline-flex;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.75rem;
   }
 
-  .footer-location {
-    color: rgba(255, 255, 255, 0.7);
+  .footer-logo:hover {
+    text-decoration: none;
   }
 
-  .footer-contact a {
+  .footer-logo .logo-text {
     color: white;
   }
 
-  .footer-contact a:hover {
-    color: var(--color-primary);
+  .footer-logo .logo-accent {
+    color: var(--color-accent);
   }
 
-  .separator {
-    margin: 0 0.5rem;
-    color: rgba(255, 255, 255, 0.3);
+  .footer-tagline {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 1rem;
+    font-size: 0.9375rem;
   }
 
-  .footer-links {
+  .footer-location {
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    margin: 0;
   }
 
-  .footer-links a {
-    color: rgba(255, 255, 255, 0.8);
+  .footer-location svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
   }
 
-  .footer-links a:hover {
+  /* Navigation */
+  .footer-nav h4,
+  .footer-services h4,
+  .footer-cta h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    margin: 0 0 1.25rem;
+  }
+
+  .footer-nav ul,
+  .footer-services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-nav li,
+  .footer-services li {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-nav a,
+  .footer-services a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9375rem;
+    transition: color var(--transition-fast);
+  }
+
+  .footer-nav a:hover,
+  .footer-services a:hover {
     color: white;
     text-decoration: none;
   }
 
+  /* CTA */
+  .footer-cta p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9375rem;
+    margin: 0 0 1.25rem;
+    line-height: 1.5;
+  }
+
+  .btn-outline-light {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.625rem 1.25rem;
+  }
+
+  .btn-outline-light:hover {
+    background: white;
+    border-color: white;
+    color: var(--color-text);
+  }
+
+  /* Bottom */
   .footer-bottom {
     padding-top: 1.5rem;
     text-align: center;
@@ -89,27 +180,59 @@ const currentYear = new Date().getFullYear();
 
   .footer-bottom p {
     margin: 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.4);
     font-size: 0.875rem;
   }
 
-  @media (max-width: 768px) {
+  /* Responsive */
+  @media (max-width: 900px) {
     .footer-content {
-      flex-direction: column;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-brand {
+      grid-column: span 2;
+      padding-right: 0;
       text-align: center;
     }
 
-    .footer-links {
+    .footer-location {
       justify-content: center;
     }
+  }
 
-    .separator {
-      display: none;
+  @media (max-width: 600px) {
+    .footer {
+      padding: 3rem 0 1.5rem;
     }
 
-    .footer-contact a {
-      display: block;
-      margin: 0.25rem 0;
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .footer-brand {
+      grid-column: auto;
+    }
+
+    .footer-nav ul,
+    .footer-services ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1.5rem;
+    }
+
+    .footer-nav li,
+    .footer-services li {
+      margin: 0;
+    }
+
+    .footer-cta {
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
   }
 </style>

@@ -4,185 +4,363 @@ import Base from '../layouts/Base.astro';
 
 <Base
   title="About"
-  description="Learn about Eric Davidson-Sawyer, a web developer based in South Berwick, ME, helping local businesses build their online presence."
+  description="Learn about Eric Davidson-Sawyer, a software engineer based in South Berwick, ME, helping businesses with websites, applications, and AI solutions."
 >
-  <section class="page-header">
+  <!-- Hero Section -->
+  <section class="about-hero">
     <div class="container">
-      <h1>About</h1>
-      <p>A little bit about me and how I work.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>Hi, I'm Eric</h2>
-
-          <p>
-            Software engineer based in South Berwick, Maine. After years building
-            software for companies large and small, I started helping local businesses
-            get online.
-          </p>
-
-          <p>
-            Too many local businesses have outdated websites, no website, or are
-            overpaying for basic services. I offer straightforward, fairly-priced
-            web development that actually fits small business needs.
-          </p>
-
-          <h3>My Approach</h3>
-
-          <p>Simple. You don't need a complicated website. You need one that:</p>
-
-          <ul>
-            <li>Looks professional</li>
-            <li>Loads fast</li>
-            <li>Works on phones</li>
-            <li>Shows up on Google</li>
-            <li>Makes it easy to contact you</li>
-          </ul>
-
-          <p>That's what I build. No fluff. No jargon. No surprise fees.</p>
-
-          <h3>Why Local?</h3>
-
-          <p>
-            I shop at your stores and eat at your restaurants. When you succeed,
-            our whole community benefits.
-          </p>
-
-          <p>
-            Plus, being local means I'm actually available. Coffee meetings, not
-            just Zoom calls.
-          </p>
-        </div>
-
-        <aside class="about-sidebar">
-          <div class="sidebar-box">
-            <h3>Technical Background</h3>
-            <ul>
-              <li>10+ years software engineering</li>
-              <li>Full-stack development</li>
-              <li>Modern web technologies</li>
-              <li>Performance optimization</li>
-              <li>SEO best practices</li>
-            </ul>
-          </div>
-
-          <div class="sidebar-box">
-            <h3>Based In</h3>
-            <p>South Berwick, ME</p>
-            <p class="text-light">Serving the Seacoast region of Maine and New Hampshire</p>
-          </div>
-        </aside>
+      <div class="about-hero-content">
+        <p class="hero-eyebrow">About Me</p>
+        <h1>Hi, I'm <span class="gradient-text">Eric</span></h1>
+        <p class="hero-subtitle">
+          Software engineer helping Seacoast businesses with websites,
+          applications, and AI solutions that actually work.
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- About Content -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-wrapper">
+            <img src="/images/Headshot.png" alt="Eric Davidson-Sawyer" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2>My Story</h2>
+          <p>
+            After years building software for companies large and small - including
+            deep work implementing AI solutions - I noticed something: too many local
+            businesses struggle to access quality technology services.
+          </p>
+          <p>
+            I started Eric DS to change that. Whether you need a professional website,
+            a custom application, or help implementing AI into your workflows, I offer
+            straightforward, fairly-priced solutions that actually fit your needs.
+          </p>
+
+          <h2>My Approach</h2>
+          <p>Simple. Technology should solve problems, not create them. I focus on:</p>
+          <ul class="approach-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Understanding your actual needs
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Building reliable, maintainable solutions
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Rigorous implementation (especially with AI)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Clear communication throughout
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Fair, transparent pricing
+            </li>
+          </ul>
+          <p class="approach-summary">No fluff. No jargon. No surprise fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Local Section -->
   <section class="section section-alt">
-    <div class="container text-center">
-      <h2>Let's Talk</h2>
-      <p class="text-light">
-        Have a project in mind? Let's see if we're a good fit.
-      </p>
-      <a href="/contact" class="btn mt-2">Get in Touch</a>
+    <div class="container">
+      <div class="local-content">
+        <div class="local-text">
+          <p class="section-eyebrow">Why Local</p>
+          <h2>Community Matters</h2>
+          <p>
+            I shop at your stores and eat at your restaurants. When you succeed,
+            our whole community benefits.
+          </p>
+          <p>
+            Being local means I'm actually available. Coffee meetings, not just
+            Zoom calls. I understand the market you're serving because I live here too.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">ME</div>
+            <div class="stat-label">Based in Maine</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1:1</div>
+            <div class="stat-label">Direct Communication</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Let's work together</h2>
+        <p>Have a project in mind? Let's see if we're a good fit.</p>
+        <a href="/contact" class="btn btn-lg btn-white">Get in Touch</a>
+      </div>
     </div>
   </section>
 </Base>
 
 <style>
-  .page-header {
+  /* About Hero */
+  .about-hero {
+    padding: 4rem 0 3rem;
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-    padding: 4rem 0;
+    text-align: center;
   }
 
-  .page-header h1 {
-    margin-bottom: 0.5rem;
+  .about-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
   }
 
-  .page-header p {
+  .hero-eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .about-hero h1 {
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
     font-size: 1.25rem;
     color: var(--color-text-light);
     margin: 0;
+    line-height: 1.6;
   }
 
-  .about-content {
+  /* About Grid */
+  .about-grid {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 3rem;
+    grid-template-columns: 350px 1fr;
+    gap: 4rem;
     align-items: start;
   }
 
-  .about-text h2 {
-    margin-bottom: 1.5rem;
+  .about-image {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
   }
 
-  .about-text h3 {
-    margin-top: 2rem;
+  .image-wrapper {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .about-text h2:first-child {
+    margin-top: 0;
   }
 
   .about-text p {
     color: var(--color-text-light);
     margin-bottom: 1rem;
+    line-height: 1.7;
   }
 
-  .about-text ul {
-    padding-left: 1.5rem;
-    color: var(--color-text-light);
+  .approach-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
   }
 
-  .about-text li {
+  .approach-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .approach-list svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  .approach-summary {
+    font-weight: 500;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+  }
+
+  /* Local Section */
+  .local-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .section-eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
     margin-bottom: 0.5rem;
   }
 
-  .about-sidebar {
-    position: sticky;
-    top: calc(var(--header-height) + 2rem);
+  .local-text h2 {
+    margin-bottom: 1.25rem;
   }
 
-  .sidebar-box {
-    background: var(--color-bg-alt);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .sidebar-box h3 {
+  .local-text p {
+    color: var(--color-text-light);
     margin-bottom: 1rem;
-    font-size: 1rem;
+    line-height: 1.7;
   }
 
-  .sidebar-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
-  .sidebar-box li {
-    padding: 0.25rem 0;
+  .stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--color-border);
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
     color: var(--color-text-light);
   }
 
-  .sidebar-box p {
-    margin: 0.25rem 0;
+  /* CTA Section */
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-bg-dark) 0%, #1e293b 100%);
+    color: white;
+    text-align: center;
   }
 
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-section h2 {
+    color: white;
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-white {
+    background: white;
+    color: var(--color-text);
+  }
+
+  .btn-white:hover {
+    background: var(--color-bg-alt);
+    color: var(--color-text);
+  }
+
+  /* Responsive */
   @media (max-width: 900px) {
-    .about-content {
+    .about-grid {
       grid-template-columns: 1fr;
+      gap: 2rem;
     }
 
-    .about-sidebar {
+    .about-image {
       position: static;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+      max-width: 300px;
+      margin: 0 auto;
     }
 
-    .sidebar-box {
-      margin-bottom: 0;
+    .local-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .stat-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      padding: 1rem 1.5rem;
+    }
+
+    .stat-number {
+      font-size: 1.5rem;
+      margin: 0;
     }
   }
 </style>

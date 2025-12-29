@@ -4,194 +4,485 @@ import Base from '../layouts/Base.astro';
 
 <Base
   title="Home"
-  description="Professional web development services for local businesses in South Berwick, ME and the Seacoast region. Modern websites, hosting, and ongoing support."
+  description="Software development, AI solutions, and web services for businesses in South Berwick, ME and the Seacoast region. From websites to custom applications."
 >
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1>Websites That Work for Your Business</h1>
-      <p class="hero-subtitle">
-        Fast, professional websites for local businesses in the Seacoast region.
-        No hassle. No jargon. Just results.
-      </p>
-      <div class="hero-cta">
-        <a href="/contact" class="btn">Get a Free Quote</a>
-        <a href="/services" class="btn btn-outline">See Services</a>
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Software Development in South Berwick, ME</p>
+        <h1>Technology That <span class="gradient-text">Works</span> for Your Business</h1>
+        <p class="hero-subtitle">
+          Websites, applications, and AI solutions for businesses in the Seacoast region.
+          No hassle. No jargon. Just results.
+        </p>
+        <div class="hero-cta">
+          <a href="/contact" class="btn btn-lg">Get a Free Quote</a>
+          <a href="/services" class="btn btn-outline btn-lg">See Services</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>10+ years experience</span>
+          </div>
+          <div class="trust-item">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>Local & available</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="/images/Headshot.png" alt="Eric Davidson-Sawyer - Web Developer" loading="eager" />
+        </div>
+        <div class="image-decoration"></div>
       </div>
     </div>
   </section>
 
-  <!-- Services Preview -->
-  <section class="section section-alt">
+  <!-- Services Section -->
+  <section class="section services-section">
     <div class="container">
-      <h2 class="text-center">Services</h2>
+      <div class="section-header">
+        <p class="section-eyebrow">What I Do</p>
+        <h2>Services</h2>
+        <p class="section-subtitle">From websites to AI-powered solutions. Whatever you need.</p>
+      </div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Web Design</h3>
-          <p>
-            Mobile-friendly sites that load fast and look professional.
-          </p>
+      <div class="services-grid stagger-in">
+        <div class="service-card card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Professional websites and web apps that work on any device.</p>
         </div>
 
-        <div class="service-card">
-          <h3>Hosting</h3>
-          <p>
-            Reliable, secure hosting. SSL included. I handle the tech.
-          </p>
+        <div class="service-card card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a4 4 0 0 1 4 4v1a1 1 0 0 0 1 1h1a4 4 0 0 1 0 8h-1a1 1 0 0 0-1 1v1a4 4 0 0 1-8 0v-1a1 1 0 0 0-1-1H6a4 4 0 0 1 0-8h1a1 1 0 0 0 1-1V6a4 4 0 0 1 4-4z"></path>
+            </svg>
+          </div>
+          <h3>AI Solutions</h3>
+          <p>Rigorous AI-powered research and automation for your business.</p>
         </div>
 
-        <div class="service-card">
-          <h3>Maintenance</h3>
-          <p>
-            Updates, security patches, and fixes. Your site stays healthy.
-          </p>
+        <div class="service-card card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3>Custom Applications</h3>
+          <p>Complex software built to solve your specific problems.</p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </div>
           <h3>Local SEO</h3>
-          <p>
-            Get found on Google. Show up when locals search for you.
-          </p>
+          <p>Get found on Google. Show up when locals search for you.</p>
         </div>
       </div>
 
       <div class="text-center mt-4">
-        <a href="/services" class="btn">View All Services</a>
+        <a href="/services" class="btn btn-outline">View All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- Why Work With Me -->
-  <section class="section">
+  <!-- Why Me Section -->
+  <section class="section section-alt why-section">
     <div class="container">
-      <h2 class="text-center">Why Me</h2>
+      <div class="section-header">
+        <p class="section-eyebrow">Why Choose Me</p>
+        <h2>Built Different</h2>
+      </div>
 
-      <div class="benefits-grid">
-        <div class="benefit">
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-number">01</div>
           <h3>Local</h3>
-          <p>
-            Based in South Berwick. Available for coffee, not just calls.
-          </p>
+          <p>Based in South Berwick. Available for coffee, not just calls.</p>
         </div>
 
-        <div class="benefit">
+        <div class="why-card">
+          <div class="why-number">02</div>
           <h3>Plain English</h3>
-          <p>
-            No tech jargon. You'll understand exactly what you're paying for.
-          </p>
+          <p>No tech jargon. You'll understand exactly what you're paying for.</p>
         </div>
 
-        <div class="benefit">
+        <div class="why-card">
+          <div class="why-number">03</div>
           <h3>Fair Prices</h3>
-          <p>
-            Transparent quotes. No surprises. Flexible payment options.
-          </p>
+          <p>Transparent quotes. No surprises. Flexible payment options.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="section section-alt cta-section">
-    <div class="container text-center">
-      <h2>Let's Talk</h2>
-      <p class="text-light">
-        Free consultation. No obligation. Just answers.
-      </p>
-      <a href="/contact" class="btn mt-2">Get in Touch</a>
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to get started?</h2>
+        <p>Free consultation. No obligation. Just answers.</p>
+        <a href="/contact" class="btn btn-lg btn-white">Let's Talk</a>
+      </div>
     </div>
   </section>
 </Base>
 
 <style>
+  /* Hero */
   .hero {
-    padding: 6rem 0;
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    position: relative;
+    padding: 4rem 0 6rem;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+    z-index: -2;
+  }
+
+  .hero-bg::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 80%;
+    height: 150%;
+    background: radial-gradient(ellipse, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+    z-index: -1;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
   }
 
   .hero h1 {
-    font-size: 3rem;
     margin-bottom: 1.5rem;
-    max-width: 700px;
+    line-height: 1.1;
   }
 
   .hero-subtitle {
     font-size: 1.25rem;
     color: var(--color-text-light);
-    max-width: 600px;
     margin-bottom: 2rem;
+    line-height: 1.6;
   }
 
   .hero-cta {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 2.5rem;
   }
 
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+  .hero-trust {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
 
-  .service-card {
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+  }
+
+  .trust-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-primary);
+  }
+
+  .hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    z-index: 1;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-decoration {
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    border-radius: var(--radius-xl);
+    z-index: 0;
+    opacity: 0.2;
+  }
+
+  /* Services Section */
+  .services-section {
     background: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
-  .service-card h3 {
+  .section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+
+  .section-eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     color: var(--color-primary);
     margin-bottom: 0.5rem;
   }
 
-  .service-card p {
+  .section-header h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .section-subtitle {
     color: var(--color-text-light);
+    font-size: 1.125rem;
     margin: 0;
   }
 
-  .benefits-grid {
+  .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
 
-  .benefit h3 {
+  .service-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .service-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1.25rem;
+    padding: 0.625rem;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%);
+    border-radius: var(--radius-lg);
+    color: var(--color-primary);
+  }
+
+  .service-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .service-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+  }
+
+  .service-card p {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Why Section */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .why-card {
+    padding: 2rem;
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+  }
+
+  .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .why-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  .why-card h3 {
     margin-bottom: 0.5rem;
   }
 
-  .benefit p {
+  .why-card p {
     color: var(--color-text-light);
     margin: 0;
   }
 
+  /* CTA Section */
   .cta-section {
-    background: var(--color-text);
+    background: linear-gradient(135deg, var(--color-bg-dark) 0%, #1e293b 100%);
     color: white;
+    text-align: center;
+  }
+
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .cta-section h2 {
     color: white;
+    margin-bottom: 0.75rem;
   }
 
-  .cta-section .text-light {
-    color: rgba(255, 255, 255, 0.8);
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-white {
+    background: white;
+    color: var(--color-text);
+  }
+
+  .btn-white:hover {
+    background: var(--color-bg-alt);
+    color: var(--color-text);
+    transform: translateY(-1px);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .hero-content {
+      order: 2;
+    }
+
+    .hero-image {
+      order: 1;
+    }
+
+    .hero-cta {
+      justify-content: center;
+    }
+
+    .hero-trust {
+      justify-content: center;
+    }
+
+    .image-wrapper {
+      max-width: 280px;
+    }
+
+    .image-decoration {
+      max-width: 280px;
+      right: auto;
+    }
+
+    .why-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
   }
 
   @media (max-width: 768px) {
     .hero {
-      padding: 3rem 0;
+      padding: 2rem 0 4rem;
     }
 
-    .hero h1 {
-      font-size: 2rem;
+    .services-grid {
+      grid-template-columns: 1fr;
     }
 
-    .hero-subtitle {
-      font-size: 1.1rem;
+    .service-card {
+      text-align: left;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1.5rem;
+    }
+
+    .service-icon {
+      margin: 0;
+      grid-row: span 2;
+    }
+
+    .service-card h3 {
+      margin: 0;
+    }
+
+    .service-card p {
+      grid-column: 2;
     }
   }
 </style>
